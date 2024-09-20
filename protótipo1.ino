@@ -13,7 +13,7 @@ const int buzzerPin = 25;      // Pino do buzzer ativo
 DHT dht(DHTPIN, DHTTYPE);
 
 unsigned long previousMillis = 0; // Armazena o tempo anterior
-const long interval = 60000;       // Intervalo de 1 minuto (60000 ms)
+const long interval = 5000;       // Intervalo de 1 minuto (60000 ms)
 
 void setup() {
   // Inicializa os pinos como saída
@@ -30,7 +30,7 @@ void setup() {
 
 void loop() {
   // Aguarda 2 segundos entre as leituras
-  delay(2000);
+  delay(1000);
 
   // Lê a umidade e a temperatura (em Celsius)
   float humidity = dht.readHumidity();
@@ -57,7 +57,7 @@ void loop() {
     if (currentMillis - previousMillis >= interval) {
       previousMillis = currentMillis;
       digitalWrite(buzzerPin, HIGH); // Liga o buzzer
-      delay(100); // Apita por 100 ms
+      delay(2000); // Apita por 100 ms
       digitalWrite(buzzerPin, LOW); // Desliga o buzzer
     }
   } else {
@@ -69,5 +69,6 @@ void loop() {
     digitalWrite(alertLedPin, HIGH); // Acende o LED de alerta
   } else {
     digitalWrite(alertLedPin, LOW);  // Apaga o LED de alerta
-  }
+    delay(1000);
+}
 }
