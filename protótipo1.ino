@@ -65,7 +65,7 @@ void loop() {
   }
 
   // Acende o LED de alerta se a temperatura for menor que 2 °C
-  if (temperature < 2.0) {
+  if (temperature < 27.0) {
     digitalWrite(alertLedPin, HIGH); // Acende o LED de alerta
   } else {
     digitalWrite(alertLedPin, LOW);  // Apaga o LED de alerta
