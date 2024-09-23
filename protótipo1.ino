@@ -62,7 +62,7 @@ void loop() {
     }
   } else {
     digitalWrite(ledPin, LOW);  // Apaga o LED normal
-    noTone(buzzerPin);
+    noTone(buzzerPin); // Desliga o sinal sonoro do buzzer
   }
 
   // Acende o LED de alerta se a temperatura for menor que 2 °C
@@ -70,6 +70,6 @@ void loop() {
     digitalWrite(alertLedPin, HIGH); // Acende o LED de alerta
   } else {
     digitalWrite(alertLedPin, LOW);  // Apaga o LED de alerta
-    delay(1000);
+    delay(1000); //delay de 1 segundo para o loop do código
 }
 }
