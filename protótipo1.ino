@@ -1,4 +1,4 @@
-#include "DHT.h"
+#include "DHT.h" // Inclui biblioteca Do sensor DHT11
 
 // Define o pino do DHT11
 #define DHTPIN 13  // Substitua pelo pino correto do sensor DHT11
