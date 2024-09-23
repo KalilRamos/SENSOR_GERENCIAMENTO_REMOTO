@@ -13,7 +13,7 @@ const int buzzerPin = 25;      // Pino do buzzer ativo
 DHT dht(DHTPIN, DHTTYPE);
 
 unsigned long previousMillis = 0; // Armazena o tempo anterior
-const long interval = 5000;       // Intervalo de 1 minuto (60000 ms)
+const long interval = 5000;       // Intervalo de 5 segundos (5000 ms)
 
 void setup() {
   // Inicializa os pinos como saída
@@ -29,7 +29,7 @@ void setup() {
 }
 
 void loop() {
-  // Aguarda 2 segundos entre as leituras
+  // Aguarda 1 segundos entre as leituras
   delay(1000);
 
   // Lê a umidade e a temperatura (em Celsius)
