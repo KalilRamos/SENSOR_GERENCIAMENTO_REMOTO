@@ -51,17 +51,18 @@ void loop() {
 
   // Verifica a temperatura
   if (temperature >= 27.0) {
-    digitalWrite(ledPin, HIGH); // Acende o LED normal
+    digitalWrite(ledPin, HIGH); // Acende o LED verde
 
     unsigned long currentMillis = millis();
     if (currentMillis - previousMillis >= interval) {
       previousMillis = currentMillis;
-      digitalWrite(buzzerPin, HIGH); // Liga o buzzer
-      delay(2000); // Apita por 100 ms
-      digitalWrite(buzzerPin, LOW); // Desliga o buzzer
+      tone(buzzerPin, 500); // Liga o buzzer
+      delay(2000); // Apita por 2 segundos
+      noTone(buzzerPin); // Desliga o buzzer
     }
   } else {
     digitalWrite(ledPin, LOW);  // Apaga o LED normal
+    noTone(buzzerPin);
   }
 
   // Acende o LED de alerta se a temperatura for menor que 2 °C
