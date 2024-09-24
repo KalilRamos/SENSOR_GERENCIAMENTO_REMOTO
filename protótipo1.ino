@@ -2,14 +2,14 @@
 
 // Define o pino do DHT11
 #define DHTPIN 13  // Substitua pelo pino correto do sensor DHT11
-#define DHTTYPE DHT11  // Tipo de sensor DHT (DHT11)
+#define DHTTYPE DHT11  // Define Tipo de sensor DHT (DHT11)
 
 // Define os pinos do LED e do buzzer
 const int ledPin = 27;         // Pino do LED (temperatura >= 27 °C)
 const int alertLedPin = 26;    // Pino do LED de alerta (temperatura < 2 °C)
 const int buzzerPin = 25;      // Pino do buzzer ativo
 
-// Inicializa o sensor DHT
+// Inicializa o sensor DHT11
 DHT dht(DHTPIN, DHTTYPE);
 
 unsigned long previousMillis = 0; // Armazena o tempo anterior
@@ -71,6 +71,6 @@ void loop() {
   } else {
     digitalWrite(alertLedPin, LOW);  // Apaga o LED verde
     
-    delay(1000); //delay de um segundo para o reinício da leitura da temperatura e humidade
+    delay(1000); //delay de 1 segundo para o loop do código
 }
 }
