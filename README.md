@@ -9,3 +9,8 @@ Por agora usamos os seguintes componentes:
   3- 2 séries de resistores com 3 resistores de 330 Ohns cada ;
   4- Buzzers passivo e ativo ;
   5- Sensor de temperatura e humidade DHT11 ;
+
+
+  ## Simulação virtual do circuíto no tinkercad
+  ![image](https://github.com/user-attachments/assets/e59ba69d-4a3f-49cc-9813-adf35c40dc96)
+
