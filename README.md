@@ -12,5 +12,5 @@ Por agora usamos os seguintes componentes:
 
 
   ## Simulação virtual do circuíto no tinkercad
-  ![image](https://github.com/user-attachments/assets/e59ba69d-4a3f-49cc-9813-adf35c40dc96)
+![image](https://github.com/user-attachments/assets/52b3aefb-a161-4f24-b010-dce75f37c8c0)
 
