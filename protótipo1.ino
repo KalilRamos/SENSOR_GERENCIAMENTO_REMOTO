@@ -50,7 +50,7 @@ void loop() {
   Serial.println("°C");
 
   // Verifica a temperatura
-  if (temperature >= 27.0) {
+  if (temperature >= 27.0) { // Condição para quando a temperatura estiver maior ou igual a 27 gruas
     digitalWrite(ledPin, HIGH); // Acende o LED verde
 
     unsigned long currentMillis = millis();
@@ -66,10 +66,11 @@ void loop() {
   }
 
   // Acende o LED de alerta se a temperatura for menor que 2 °C
-  if (temperature < 27.0) {
-    digitalWrite(alertLedPin, HIGH); // Acende o LED de alerta
+  if (temperature < 27.0) {   // Condição para quando a temperatura estiver que 27 graus
+    digitalWrite(alertLedPin, HIGH); // Acende o LED verde
   } else {
-    digitalWrite(alertLedPin, LOW);  // Apaga o LED de alerta
-    delay(1000); //delay de 1 segundo para o loop do código
+    digitalWrite(alertLedPin, LOW);  // Apaga o LED verde
+    
+    delay(1000); //delay de um segundo para o reinício da leitura da temperatura e humidade
 }
 }
