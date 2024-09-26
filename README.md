@@ -7,13 +7,9 @@ Por agora usamos os seguintes componentes:
   1- ESP32 Doit Kevit V1 ;
   
   2- 2 leds, verde e vermelho ;
-.
   3- 2 séries de resistores com 3 resistores de 330 Ohns cada ;
-.
   4- Buzzers passivo e ativo ;
-.
   5- Sensor de temperatura e humidade DHT11 ;
-.
 
 
   ## Simulação virtual do circuíto no tinkercad
