@@ -1,15 +1,13 @@
-const int lm35 = A1;
-const int buzzer = A0;
-const int ledV = A2;
-const int ledVe = 12;
-const int buzzer2 = 11;
-
-
+const int lm35 = A1; // Define o pino do sensor de temperatura
+const int buzzer = A0; // define o pino do buzzer 1
+const int ledV = A2; // Define o pino do led verde
+const int ledVe = 12; // Define o pino do led vermelho
+const int buzzer2 = 11; // Define o pino do buzzer 2
 
 void setup()
 {
   Serial.begin(9600); // Inicia o monitor serial
-  delay(1500); // Delay de 1,5 segundos para a atualização do monitor serial
+  delay(1500); // Delay de 1,5 segundos para atuzalização do monitor serial
   pinMode(buzzer, OUTPUT); // Define a entrada do buzzer como saída
   pinMode(ledV, OUTPUT); // Define a entrada do LED vermelho como saída
   pinMode(ledVe, OUTPUT);// Define a entrada do LED verde com saída
@@ -21,7 +19,7 @@ void loop()
   int SensorTempTensao=analogRead(lm35);
   float Tensao=SensorTempTensao*5;
   Tensao/=1024;
-  float TemperaturaC =(Tensao-0.5)*100; //equação de conversão de tensão para temperatura em graus celsius
+  float TemperaturaC =(Tensao-0.5)*100; //equação de conversão fe tensão para temperatura
   
  Serial.print("  Temperatura: ");
  Serial.print(TemperaturaC);
@@ -34,7 +32,7 @@ void loop()
     digitalWrite(buzzer, LOW);// Desliga o sinal sonoro do buzzer
   } else {
     digitalWrite(ledV, HIGH); // Acende o LED de alerta
-    digitalWrite(ledVe, LOW);  // Apaga o LED verde
+    digitalWrite(ledVe, LOW);  // Apaga o LED verder
     digitalWrite(buzzer, HIGH);// Liga o sinal sonoro do buzzer
     digitalWrite(buzzer2, LOW);//desliga o sinal sonoro do buzzer2
 
@@ -42,6 +40,4 @@ void loop()
 }
   
   delay(1000);
-  
-  
   }
