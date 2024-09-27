@@ -1,3 +1,5 @@
+// Código do protótipo montado físicamente
+
 #include "DHT.h" // Inclui biblioteca Do sensor DHT11
 
 // Define o pino do DHT11
