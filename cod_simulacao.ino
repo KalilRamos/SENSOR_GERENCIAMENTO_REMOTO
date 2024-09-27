@@ -1,3 +1,7 @@
+// Código do protótipo simulado no tinkercad, precisamos usar componentes genéricos, pois a simulação não possui os componentes específicos
+
+
+
 const int lm35 = A1; // Define o pino do sensor de temperatura
 const int buzzer = A0; // define o pino do buzzer 1
 const int ledV = A2; // Define o pino do led verde
