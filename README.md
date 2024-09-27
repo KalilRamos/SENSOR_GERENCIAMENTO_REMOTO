@@ -12,5 +12,6 @@
 
 
   ## Simulação virtual do circuíto no tinkercad
-![image](https://github.com/user-attachments/assets/52b3aefb-a161-4f24-b010-dce75f37c8c0)
+![image](https://github.com/user-attachments/assets/fa503f69-9d4a-480a-a70f-7ee595b908e9)
+
 
