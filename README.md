@@ -15,3 +15,13 @@
 ![image](https://github.com/user-attachments/assets/fa503f69-9d4a-480a-a70f-7ee595b908e9)
 
 
+# Protótipo 2
+
+![Imagem do WhatsApp de 2024-10-14 à(s) 12 24 39_8e10e9f1](https://github.com/user-attachments/assets/906de519-2202-401a-bef8-110fa1601e79)
+
+
+
+# Protótipo 3
+
+![Imagem do WhatsApp de 2024-10-14 à(s) 12 19 59_1c2be098](https://github.com/user-attachments/assets/2a8189d3-fb7b-459e-9981-4862fe62a7cd)
+
