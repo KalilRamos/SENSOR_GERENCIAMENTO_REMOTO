@@ -1,3 +1,5 @@
+//CIRCUITO INTEGRADO AO ARDUINO CLOUD
+
 #include <DHT.h> // Inclui biblioteca para o sensor DHT11
 #include "thingProperties.h" // Inclui a biblioteca para a integração com a plataforma Arduino Cloud
 
