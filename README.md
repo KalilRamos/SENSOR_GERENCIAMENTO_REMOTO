@@ -1,3 +1,13 @@
+
+# Introdução Rápida
+
+* Esse projeto tem como objetivo a confecção de um circuíto de monitoramento para nos ajudar a monitorar as OLTs localizadas em vários pontos pela cidade, esse projeto está sendo realizado com ajudo da empresa a qual trabalho atualmente FIXTELL TELECOM. Com esse monitoramento será possível correigir potenciais problemas antes que afetem nossos clientes, aos poucos vamos adicionando mais funções no monitor, sendo assim, é possível que o circuíto sofra várias alterações com o tempo, porém quaisquer alterações feitas, postaremos aqui no github.
+
+  
+* Iremos deixar os códigos o mais comentado possível, para que os interessados no projeto tenham o mínimo de dificuldade possível na compreenssão do mesmo, se sintam livres para fazer críticas construtivas e sugestões ao projeto, vou deixar aqui o meu número pessoal para que possam me contatar mais facilmente. 98 99189-0978 (Kalil).
+
+
+
 # Protótipo 1
 ![Imagem do WhatsApp de 2024-09-20 à(s) 11 54 36_1ebbca85](https://github.com/user-attachments/assets/a99d62ac-5b19-4626-9752-e229662b8479)
 
