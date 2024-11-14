@@ -1,7 +1,7 @@
 
 # Introdução Rápida
 
-* Esse projeto tem como objetivo a confecção de um circuíto de monitoramento para nos ajudar a monitorar as OLTs localizadas em vários pontos pela cidade, esse projeto está sendo realizado com ajuda da empresa a qual trabalho atualmente FIXTELL TELECOM. Com esse monitoramento será possível corrigir potenciais problemas antes que afetem nossos clientes, aos poucos vamos adicionando mais funções no circuíto, sendo assim, é possível que o ele sofra alterações com o tempo, porém quaisquer alterações feitas, postaremos aqui no github.
+* Esse projeto tem como objetivo a confecção de um circuíto de monitoramento para nos ajudar a monitorar equipamentos de alta performace como servidores, OLT'S e etc. Com esse monitoramento será possível corrigir potenciais problemas antes que afetem os equipamentos monitoradps, aos poucos vamos adicionando mais funções no circuíto, sendo assim, é possível que o ele sofra alterações com o tempo, porém quaisquer alterações feitas, postaremos aqui no github.
 
   
 * Iremos deixar os códigos o mais comentado possível, para que os interessados no projeto tenham o mínimo de dificuldade possível na compreenssão do mesmo, se sintam livres para fazer críticas construtivas e sugestões ao projeto, vou deixar aqui o meu número pessoal para que possam me contatar mais facilmente. 98 99189-0978 (Kalil).
