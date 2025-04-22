@@ -115,7 +115,7 @@ void loop() {
 
   delay(1000); // Delay de 1 segundo para o loop do código
 }
-// precisei colocar esse último void para o código funcionar
+// Precisei colocar esse último void para o código funcionar, mas não me pergunte o por que rsrs
 void onUmidadeChange()  {
 
 }
