@@ -16,7 +16,7 @@ const int buzzerPin = 25;      // Pino do buzzer ativo
 unsigned long previousMillis = 0; // Armazena o tempo anterior
 const long interval = 5000;       // Intervalo de 5 segundos (5000 ms)
 
-float temperatura = 0;
+float temperatura = 0; // Variável para armazenar valor da temperatura
 float ultimaTemperatura = 0; // Variável para armazenar a última leitura de temperatura
 
 // Inicializa o sensor DHT11
@@ -69,9 +69,8 @@ void loop() {
   ArduinoCloud.update();
   delay(1000); // Intervalo de 1 segundo para a atualização na plataforma de monitoramento
 
-  // Lê a temperatura e umidade
-  temperatura = lerTemperatura();
-  float humidity = lerUmidade();
+  temperatura = lerTemperatura(); // circuito lê a temperatura
+  float humidity = lerUmidade(); // circuito lê a humidade
 
   // Verifica se houve falha na leitura
   if (isnan(humidity) || isnan(temperatura)) {
@@ -81,9 +80,9 @@ void loop() {
 
   // Mostra a umidade e a temperatura no monitor serial
   Serial.print("Umidade: ");
-  Serial.print(humidity);
+  Serial.print(humidity); // printa a variável umidade no monitor serial
   Serial.print("%  Temperatura: ");
-  Serial.print(temperatura);
+  Serial.print(temperatura); // printa a variável temperatura
   Serial.println("°C");
 
   // Atualiza o valor da temperatura no cloud com 1 casa decimal
