@@ -48,9 +48,3 @@
 ![image](https://github.com/user-attachments/assets/d35c2c85-06eb-468c-bd9d-992d4a4b143d)        ![Imagem do WhatsApp de 2024-10-17 à(s) 10 24 36_13dc870b](https://github.com/user-attachments/assets/4117d69b-6177-4198-8fb7-12455e697fc8)
 
 * No protótipo 4 realizamos mais uma integração com o arduíno cloud, porém agora para monitorar tanto a temperatura quanto a umidade remotamente, gerando gráficos da variação de temperatura (Vartemp) e umidade (Varumid) e produzindo relatórios semelhantes aos do protótipo anterior, porém agora adicionando os valores acumulados da umidade
-
-
-# Protótipo 5
-
-* O protótipo 5 está em produção, porém a ideia é que ele contará com as mesma funcionalidades dos protótipos anteriores, porém ele será integrado com outro circuito para que ele possa nos alertar através do circúito secundário se o sensor está ativo ou não, assim poderemos saber se a energia do local caiu ou não.
-
