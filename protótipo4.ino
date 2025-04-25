@@ -92,7 +92,7 @@ void loop() {
 
   // Verifica a temperatura e controla o LED e o buzzer
   if (temperatura >= 27.0) { // Condição para quando a temperatura for maior ou igual a 27 °C
-    digitalWrite(ledPin, HIGH); // Acende o LED
+    digitalWrite(ledPin, HIGH); // Acende o LED VERMELHO
 
     unsigned long currentMillis = millis();
     if (currentMillis - previousMillis >= interval) {
@@ -102,7 +102,7 @@ void loop() {
       noTone(buzzerPin); // Desliga o buzzer
     }
   } else {
-    digitalWrite(ledPin, LOW);  // Apaga o LED
+    digitalWrite(ledPin, LOW);  // Apaga o LED VERMELHO
     noTone(buzzerPin); // Desliga o sinal sonoro do buzzer
   }
 
