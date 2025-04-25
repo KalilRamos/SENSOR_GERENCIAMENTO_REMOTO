@@ -14,21 +14,21 @@ const int buzzerPin = 25;      // Pino do buzzer ativo
 unsigned long previousMillis = 0; // Armazena o tempo anterior
 const long interval = 5000;       // Intervalo de 5 segundos (5000 ms)
 
-float temperatura = 0;
+float temperatura = 0; // variável para armazenar a temperatura
 float ultimaTemperatura = 0; // Variável para armazenar a última leitura de temperatura
 
 // Inicializa o sensor DHT11
 DHT dht(DHTPIN, DHTTYPE);
 
 void setup() {
-  // Inicia o monitor serial
-  Serial.begin(115200);
+  
+  Serial.begin(115200); //inicia o monitor serial na frequência 115200
   delay(1500); // Intervalo de 1 segundo e meio entre as impressões no monitor serial
 
   // Inicializa os pinos como saída
-  pinMode(ledPin, OUTPUT);
-  pinMode(alertLedPin, OUTPUT);
-  pinMode(buzzerPin, OUTPUT);
+  pinMode(ledPin, OUTPUT); // apontamento de saída do led  verde
+  pinMode(alertLedPin, OUTPUT); // apontamento de saída do led vermelho
+  pinMode(buzzerPin, OUTPUT); // apontamento de saída do buzzer
 
   // Inicia o sensor DHT11
   dht.begin();
@@ -73,7 +73,7 @@ void loop() {
 
   // Verifica se houve falha na leitura
   if (isnan(humidity) || isnan(temperatura)) {
-    Serial.println("Falha ao ler do sensor DHT11!");
+    Serial.println("Falha ao ler do sensor DHT11!"); // imprime mensagem de erro caso o código falhe
     return;
   }
 
@@ -107,7 +107,7 @@ void loop() {
   }
 
   // Acende o LED de alerta se a temperatura for menor que 2 °C
-  if (temperatura < 2.0) {
+  if (temperatura < 2.0) { //condição para funcionamento normal do circuito
     digitalWrite(alertLedPin, HIGH); // Acende o LED de alerta
   } else {
     digitalWrite(alertLedPin, LOW);  // Apaga o LED de alerta
